@@ -1,0 +1,23 @@
+body{
+  background-image: url("citysky.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family:"Verdana";
+}
+h1 {
+  font-family:Verdana;
+  color:#000000;
+  font-size:3.6em;}
+h2 {
+  font-family:Verdana;
+  font-size:1.8em;
+  color:#000000;
+}
+#hp {
+  float: left;
+  margin: 0 50px 0 100px ;
+}
+.container {
+  display: flex;
+  align-items: center;
+}

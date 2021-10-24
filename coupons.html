@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="shop.css" rel="stylesheet" type="text/css" />
+    <script>
+      function buy(p1) {
+        if (p1 <= localStorage.getItem('value')){
+          localStorage.setItem('value', localStorage.getItem('value') - p1);
+          window.location.assign('home.html');
+        }
+        else {
+          alert("Purchase Invalid");
+        }
+      }
+      function output(){
+        document.getElementById("value").innerHTML=localStorage.getItem('value');
+      }
+      function both(){
+        output();
+        buy(p1);
+      }
+    </script>
+  </head>
+  <body onload="both()">
+    <div class="container">
+      <a href="home.html">
+        <img src="backarrow.png" width = 50 height = 50>
+      </a>
+      <div class="image">
+        <img src="Coin.png" height = 50 width = 50 style="position:fixed left:200px">
+      </div>
+      <div class="text">
+        <h4><span id="value"></span></h4>
+      </div>
+    </div>
+    <h1 style="text-align:center"> Shop </h1>
+    <ul>
+      <li class="active"><a href="coupons.html">Rewards</a></li>
+      <li><a href="upgrades.html">Mall Upgrades</a></li>
+    </ul>
+    <h2> 10% off your next Starbucks Order!! </h2>
+    <input onclick="buy(100)" type="submit" value="Redeem for 100 Coins">
+    <h2> Free order of fries on your next Chick-fil-a Order!! </h2>
+    <input onclick = "buy(250)" type="submit" value="Redeem for 250 Coins">
+    <h2> Buy one coffee and get one half off at Starbucks!! </h2>
+    <input onclick ="buy(75)" type="submit" value="Redeem for 75 Coins">
+    </a>
+  </body>
+</html>

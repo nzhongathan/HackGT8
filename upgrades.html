@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="shop.css" rel="stylesheet" type="text/css" />
+    <script>
+      function buy(p1) {
+        if (p1 <= localStorage.getItem('value')){
+          localStorage.setItem('value', localStorage.getItem('value') - p1);
+          window.location.assign('home.html');
+        }
+        else {
+          alert("Purchase Invalid");
+        }
+      }
+      function output(){
+        document.getElementById("value").innerHTML=localStorage.getItem('value');
+      }
+      function both(){
+        output();
+        buy(p1);
+      }
+    </script>
+  </head>
+
+  <body onload="both()">
+    <div class="container">
+      <a href="home.html">
+        <img src="backarrow.png" width = 50 height = 50>
+      </a>
+      <div class="image">
+        <img src="Coin.png" height = 50 width = 50 style="position:fixed left:200px">
+      </div>
+      <div class="text">
+        <h4><span id="value"></span></h4>
+      </div>
+    </div>
+    <h1 style="text-align:center"> Shop </h1>
+    <ul>
+      <li><a href="coupons.html">Rewards</a></li>
+      <li class="active"><a href="upgrades.html">Mall Upgrades</a></li>
+    </ul>
+    <h2> Buy a New Floor!! </h2>
+    <input onclick="buy(2500)" type="submit" value="Redeem for 2500 Coins">
+    <h2> Build a Target!! </h2>
+    <input onclick="buy(1000)" type="submit" value="Redeem for 1000 Coins">
+    <h2> Upgrade Starbucks!! </h2>
+    <input onclick="buy(500)" type="submit" value="Redeem for 500 Coins">
+  </body>
+</html>

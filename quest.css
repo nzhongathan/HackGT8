@@ -1,0 +1,31 @@
+body{
+    font-family:Verdana;
+}
+h1{
+  color: coral;
+  font-size: 50px;
+}
+h2 {
+  color: black;
+  font-size: 30px;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+img {
+  max-width: 100%;
+  margin-right:10px;
+  margin-left:10px;
+
+}
+.image {
+  flex-basis: 40%;
+  position: relative;
+  left:1250px;
+}
+.text {
+  font-size: 20px;
+  position: relative;
+  left:720px;
+}

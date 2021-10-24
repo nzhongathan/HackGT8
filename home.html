@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <script>
+      function output(){
+        document.getElementById("value").innerHTML=localStorage.getItem('value');
+      }
+    </script>
+  </head>
+
+  <body onload="output()">
+    <div id="rcorners4">
+    <img src="Coin.png" height = 50 width = 50 style="margin-left:1075px">
+    <h4><span id="value"></span></h4>
+    <a href="profile.html">
+      <img src="profileicon.png" height= 100 width = 100 style="position:absolute; top:0px; left:200px">
+    </a>
+    <a href="coupons.html">
+      <img src="shopicon.png" height = 90 width = 100
+      style = "position:absolute; top:5px; left : 350px">
+    </a>
+    <a href = "quest.html">
+      <img src = "quest.png" height = 90 width = 100 style = "position:absolute; left: 500px; top:9px">
+    </a>
+    </div>
+    <img src="GoodMall1.png" class="center">
+  </body>
+</html>

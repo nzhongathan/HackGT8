@@ -1,0 +1,46 @@
+coin{
+  height:50px;
+  width:50px;
+  border-radius:50%;
+  z-index:20;
+  margin-left:85%;
+}
+
+#value{
+  left:84%;
+  top:35px;
+  font-size:30px;
+}
+.center{
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  width:50%;
+}
+#rcorners4 {
+  border-radius: 15px;
+  background: #FFFFFF;
+  padding: 20px; 
+  width: 1250px;
+  display: flex;
+  align-items: center;
+  margin-left:auto;
+  margin-right:auto;
+  height: 50px;
+  opacity:0.8; 
+} 
+
+
+h1 {text-align:center;
+        font-family:Arial;
+        color:#000000}
+    
+body{
+  background-image: url("citysky.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family:"Verdana";
+}
+h4 {
+  font-size:20px;
+}

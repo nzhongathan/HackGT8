@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="quest.css" rel="stylesheet" type="text/css" />
+    <script>
+      function output(){
+        document.getElementById("value").innerHTML=localStorage.getItem('value');
+      }
+    </script>
+  </head>
+
+  <body onload="output()">
+    <div class="container">
+      <a href="quest.html">
+        <img src="backarrow.png" width = 50 height = 50>
+      </a>
+      <div class="image">
+        <img src="Coin.png" height = 50 width = 50 style="position:fixed left:200px">
+      </div>
+      <div class="text">
+        <h4><span id="value"></span></h4>
+      </div>
+    </div>
+    <h1 style="text-align:center"> Quests </h1>
+    <h2> Visit This Store! </h2>
+    <h4> 0/1 Completed </h4>
+    <img src = "ProgressBar3.png">
+  </body>
+</html>
